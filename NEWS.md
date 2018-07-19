@@ -1,16 +1,29 @@
-# ModernDive 0.2.0.9000
+# ModernDive 0.3.0.9000
 
-- Added wide-logo to top of each chapter and `logos` folder
+- Updated links to free DataCamp course in Visualization and Data Wrangling chapters
+
+# ModernDive 0.3.0
+
+## Content changes
+
+* Reorganized chapter sequencing according to flowchart at top of [Section 1.1](http://moderndive.com/index.html#intro-for-students)
+* Chapter 2 - Getting Started: Added more explanation on R packages, including analogy for `install.packages()` and `library()` (akin to downloading apps onto phone)
+* Added "Data Modeling" portion to book
+    + Chapter 6 - Basic regression: one numerical explanatory variable, correlation, one categorical explanatory variable)
+    + Chapter 7 - Multiple regression: two numerical explanatory variables, one numerical and one categorical, interaction effects, Simpson's Paradox
+    + Uses new [`moderndive`](https://moderndive.github.io/moderndive/) package, which includes `get_regression_table()` and `get_regression_points()` wrapper functions to simplify outputing of clean regression tables and observed/fitted values + resisuals
+* Added "statistical inference" portion to book
+    + Added Chapter 8 - Sampling (still under construction) using [sampling bowl](https://github.com/moderndive/moderndive/blob/master/data-raw/sampling_bowl.jpeg)
+    + Chapters 9 and 10 on confidence intervals and hypothesis testing have not yet been updated, as we were awaiting the now launched package: [`infer`: A tidyverse-friendly R package fo statistical inference](https://github.com/andrewpbray/infer)
+    + Added Chapter 11 - Inference for regression (still under construction), where we'll revisit the regression models fit in Chapters 6 & 7
+
+
+## Other changes
+
+- Development version of book now available at <http://moderndive.netlify.com/>; deployed via travis-ci + netlify. 
+- Added wide ModernDive logo to top of each chapter and `logos` folder
 - Added favicon (icon in browser tab)
-
-Development version; a work in progress. Some planned updates:
-
-* **Chapter 6: Data Modeling using Regression via `broom`**
-    + Better treatment of experimental design and its effect on bias/causation than currently exists in chapter.
-    + Examples of regression with categorical predictors with 3 or more levels.
-    + Multivariate regression, in particular the following predictor scenarios: 2 numerical, 2 categorical, and 1 numerical + 1 categorical
-    + Interaction effects
-* **Chapter 7-9: Sampling, Hypothesis Testing, Confidence Intervals** have largely not been updated, pending developments of [`infer`: A tidyverse-friendly R package fo statistical inference](https://github.com/andrewpbray/infer)
+- Moved home GitHub repository from <https://github.com/ismayc/moderndiver-book/> to <https://github.com/moderndive/moderndive_book>
 
 
 
@@ -59,7 +72,7 @@ Development version; a work in progress. Some planned updates:
 
 # ModernDive 0.1.3
 
-* Attempting to fix Shiny app in Figure 6.2 appearing as white box in published site noted [here](https://github.com/ismayc/moderndiver-book/issues/2)
+* Attempting to fix Shiny app in Figure 6.2 appearing as white box in published site noted [here](https://github.com/moderndive/moderndive_book/issues/2)
     * Reverted to using screenshot with link instead
 * Updated link to `dplyr` [cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-transformation-cheatsheet.pdf) and `ggplot2` [cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf)
 * Began adding DataCamp chapters as Review Questions to the end of Chapters 3 and 4 (More to come)
@@ -74,7 +87,7 @@ Development version; a work in progress. Some planned updates:
 * Fixed edit link to point to moderndive-book GitHub repo instead of moderndive-source repo
 * Fixed broken links to script files at the end of Chapters 4-9
 * Added `purl=FALSE` to chunks that do not contain useful code to the reader
-* Attempting to fix Shiny app in Figure 6.2 appearing as white box in published site noted [here](https://github.com/ismayc/moderndiver-book/issues/2)
+* Attempting to fix Shiny app in Figure 6.2 appearing as white box in published site noted [here](https://github.com/moderndive/moderndive_book/issues/2)
 
 
 
