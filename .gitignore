@@ -1,3 +1,4 @@
+#*docs/
 .Rproj.user
 .Rhistory
 .RData
@@ -10,3 +11,6 @@ ModernDive\ Master.Rproj
 *docs-devel/
 .DS_Store
 *rsconnect/
+purl.Rout
+ismaykim.log
+#bib/packages.bib
